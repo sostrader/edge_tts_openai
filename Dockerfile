@@ -6,7 +6,9 @@ ENV TZ=etc/UTC
 # Install dependencies
 RUN apk add --no-cache \
     git \
-    build-base 
+    build-base \
+    g++ \
+    libc-dev
 
 # Install Python dependencies
 COPY . .
