@@ -15,97 +15,97 @@ voice_mapping = {
         "alloy": "en-GB-RyanNeural",
         "echo": "en-GB-LibbyNeural",
         "fable": "en-GB-SoniaNeural",
-        "onyx": "en-GB-ElliotNeural",
+        "onyx": "en-GB-ElliotNeural",  
         "nova": "en-GB-MaisieNeural",
-        "shimmer": "en-GB-AbbieNeural",
+        "shimmer": "en-GB-AbbieNeural",  
     },
     "pt": {  # Portuguese (Brazil)
         "alloy": "pt-BR-AntonioNeural",
         "echo": "pt-BR-FranciscaNeural",
         "fable": "pt-BR-ThalitaNeural",
-        "onyx": "pt-BR-AntonioNeural",
-        "nova": "pt-BR-FranciscaNeural",
-        "shimmer": "pt-BR-ThalitaNeural",
+        "onyx": "en-US-AndrewMultilingualNeural",
+        "nova": "en-US-AvaMultilingualNeural",
+        "shimmer": "en-US-EmmaMultilingualNeural",
     },
     "es": {  # Spanish (Spain)
         "alloy": "es-ES-AlvaroNeural",
         "echo": "es-ES-ElviraNeural",
-        "fable": "es-ES-LuciaNeural",
-        "onyx": "es-ES-GonzaloNeural",
-        "nova": "es-ES-SergioNeural",
-        "shimmer": "es-ES-PilarNeural",
+        "fable": "es-ES-XimenaNeural", # Substituí LuciaNeural por XimenaNeural (disponível na sua lista)
+        "onyx": "es-ES-GonzaloNeural", 
+        "nova": "en-US-EmmaMultilingualNeural", # Adicionei uma voz multilíngue
+        "shimmer": "en-US-AvaMultilingualNeural", # Adicionei uma voz multilíngue
     },
     "fr": {  # French (France)
-        "alloy": "fr-FR-DenisNeural",
-        "echo": "fr-FR-HenriNeural",
-        "fable": "fr-FR-CelesteNeural",
-        "onyx": "fr-FR-YannNeural",
-        "nova": "fr-FR-BrigitteNeural",
-        "shimmer": "fr-FR-EloiseNeural",
+        "alloy": "fr-FR-HenriNeural", # Substituí DenisNeural por HenriNeural (disponível na sua lista)
+        "echo": "fr-FR-EloiseNeural",
+        "fable": "fr-FR-DeniseNeural", # Adicionei DeniseNeural
+        "onyx": "fr-FR-RemyMultilingualNeural", # Adicionei uma voz multilíngue
+        "nova": "fr-FR-VivienneMultilingualNeural", # Adicionei uma voz multilíngue
+        "shimmer": "en-US-AvaMultilingualNeural", # Adicionei uma voz multilíngue 
     },
     "it": {  # Italian (Italy)
         "alloy": "it-IT-DiegoNeural",
-        "echo": "it-IT-FabianaNeural",
-        "fable": "it-IT-GiorgioNeural",
-        "onyx": "it-IT-IsabellaNeural",
-        "nova": "it-IT-LuciaNeural",
-        "shimmer": "it-IT-BiancaNeural",
+        "echo": "it-IT-ElsaNeural", # Substituí FabianaNeural por ElsaNeural (disponível na sua lista)
+        "fable": "it-IT-IsabellaNeural",
+        "onyx": "it-IT-GiuseppeNeural",
+        "nova": "en-US-EmmaMultilingualNeural", # Adicionei uma voz multilíngue
+        "shimmer": "en-US-AvaMultilingualNeural", # Adicionei uma voz multilíngue
     },
     "de": {  # German (Germany)
         "alloy": "de-DE-ConradNeural",
         "echo": "de-DE-KatjaNeural",
         "fable": "de-DE-AmalaNeural",
-        "onyx": "de-DE-BerndNeural",
-        "nova": "de-DE-ElkeNeural",
-        "shimmer": "de-DE-KasperNeural",
+        "onyx": "de-DE-FlorianMultilingualNeural", # Adicionei uma voz multilíngue
+        "nova": "de-DE-SeraphinaMultilingualNeural", # Adicionei uma voz multilíngue
+        "shimmer": "en-US-AvaMultilingualNeural", # Adicionei uma voz multilíngue
     },
     "nl": {  # Dutch (Netherlands)
         "alloy": "nl-NL-ColetteNeural",
         "echo": "nl-NL-FennaNeural",
         "fable": "nl-NL-MaartenNeural",
-        "onyx": "nl-NL-DaanNeural",
-        "nova": "nl-NL-LotteNeural",
-        "shimmer": "nl-NL-SofieNeural",
+        "onyx": "en-US-AndrewMultilingualNeural", # Adicionei uma voz multilíngue
+        "nova": "en-US-AvaMultilingualNeural", # Adicionei uma voz multilíngue
+        "shimmer": "en-US-EmmaMultilingualNeural", # Adicionei uma voz multilíngue
     },
     "ru": {  # Russian (Russia)
         "alloy": "ru-RU-DmitryNeural",
         "echo": "ru-RU-SvetlanaNeural",
-        "fable": "ru-RU-DariyaNeural",
-        "onyx": "ru-RU-PavelNeural",
-        "nova": "ru-RU-TatyanaNeural",
-        "shimmer": "ru-RU-YuriNeural",
+        "fable": "en-US-EmmaMultilingualNeural", # Adicionei uma voz multilíngue
+        "onyx": "en-US-AndrewMultilingualNeural", # Adicionei uma voz multilíngue
+        "nova": "en-US-AvaMultilingualNeural", # Adicionei uma voz multilíngue
+        "shimmer": "en-US-BrianMultilingualNeural", # Adicionei uma voz multilíngue
     },
     "zh": {  # Chinese (Simplified)
-        "alloy": "zh-CN-XiaochenNeural",
-        "echo": "zh-CN-XiaohanNeural",
-        "fable": "zh-CN-YunxiNeural",
-        "onyx": "zh-CN-YunyeNeural",
-        "nova": "zh-CN-XiaoxiaoNeural",
-        "shimmer": "zh-CN-XiaomengNeural",
+        "alloy": "zh-CN-YunxiNeural", # Reorganizei as vozes para ter 6 distintas
+        "echo": "zh-CN-XiaoxiaoNeural",
+        "fable": "zh-CN-XiaoyiNeural",
+        "onyx": "zh-CN-YunxiaNeural",
+        "nova": "zh-CN-YunyangNeural", 
+        "shimmer": "zh-CN-liaoning-XiaobeiNeural", 
     },
     "ja": {  # Japanese
         "alloy": "ja-JP-KeitaNeural",
-        "echo": "ja-JP-AyumiNeural",
-        "fable": "ja-JP-NanamiNeural",
-        "onyx": "ja-JP-ShioriNeural",
-        "nova": "ja-JP-HarukaNeural",
-        "shimmer": "ja-JP-KazukiNeural",
+        "echo": "ja-JP-NanamiNeural",
+        "fable": "en-US-EmmaMultilingualNeural", # Adicionei uma voz multilíngue
+        "onyx": "en-US-AndrewMultilingualNeural", # Adicionei uma voz multilíngue
+        "nova": "en-US-AvaMultilingualNeural", # Adicionei uma voz multilíngue
+        "shimmer": "en-US-BrianMultilingualNeural", # Adicionei uma voz multilíngue
     },
     "ko": {  # Korean
-        "alloy": "ko-KR-SebinNeural",
-        "echo": "ko-KR-InjiNeural",
-        "fable": "ko-KR-GenaNeural",
-        "onyx": "ko-KR-HyunjunNeural",
-        "nova": "ko-KR-HyeriNeural",
-        "shimmer": "ko-KR-SoyiNeural",
+        "alloy": "ko-KR-HyunsuNeural", # Usei as vozes disponíveis na sua lista
+        "echo": "ko-KR-SunHiNeural",
+        "fable": "ko-KR-InJoonNeural", 
+        "onyx": "en-US-AndrewMultilingualNeural", # Adicionei uma voz multilíngue
+        "nova": "en-US-AvaMultilingualNeural", # Adicionei uma voz multilíngue
+        "shimmer": "en-US-EmmaMultilingualNeural", # Adicionei uma voz multilíngue
     },
     "ar": {  # Arabic
         "alloy": "ar-SA-HamedNeural",
-        "echo": "ar-SA-ZariyahNeural",
-        "fable": "ar-SA-MonaNeural",
-        "onyx": "ar-SA-FahedNeural",
-        "nova": "ar-SA-SalmaNeural",
-        "shimmer": "ar-SA-IbrahimNeural",
+        "echo": "ar-SA-ZariyahNeural", 
+        "fable": "ar-EG-SalmaNeural", # Usei uma voz de outro dialeto árabe
+        "onyx": "ar-AE-HamdanNeural", # Usei uma voz de outro dialeto árabe
+        "nova": "ar-KW-NouraNeural", # Usei uma voz de outro dialeto árabe
+        "shimmer": "en-US-AvaMultilingualNeural", # Adicionei uma voz multilíngue
     }
 }
 
