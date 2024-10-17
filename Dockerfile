@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y \
 
 # Install Python dependencies
 COPY requirements.txt .
+COPY app.py .
 RUN pip install -r requirements.txt
 
 
