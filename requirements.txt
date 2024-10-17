@@ -1,0 +1,4 @@
+edge_tts
+fast-langdetect
+uvicorn
+fastapi
