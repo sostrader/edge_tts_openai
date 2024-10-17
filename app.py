@@ -5,9 +5,8 @@ import tempfile
 from fastapi.responses import StreamingResponse
 from io import BytesIO
 import uvicorn
-from bs4 import BeautifulSoup
-from markdown import markdown
 import re
+
 
 app = FastAPI()
 
@@ -349,22 +348,6 @@ class TTSRequest(BaseModel):
     voice: str
 
 
-
-def markdown_to_text(markdown_string):
-    """ Converts a markdown string to plaintext """
-
-    # md -> html -> text since BeautifulSoup can extract text cleanly
-    html = markdown(markdown_string)
-
-    # remove code snippets
-    html = re.sub(r'<pre>(.*?)</pre>', ' ', html)
-    html = re.sub(r'<code>(.*?)</code >', ' ', html)
-
-    # extract text
-    soup = BeautifulSoup(html, "html.parser")
-    text = ''.join(soup.findAll(string=True))
-
-    return text
 # Função para geração de fala a partir do texto
 async def text_to_speech(input_text, voice_short_name):
     communicate = edge_tts.Communicate(input_text, voice_short_name)
@@ -375,6 +358,14 @@ async def text_to_speech(input_text, voice_short_name):
         await communicate.save(tmp_path)
     
     return tmp_path
+
+def clear(texto):
+  """
+  Remove todos os caracteres "*" e "#" de um texto, 
+  incluindo múltiplas ocorrências como "##", "**", "***", "####", etc.
+  """
+  novo_texto = re.sub(r"[\*\#]+", "", texto) 
+  return novo_texto
 
 # Endpoint para converter texto em fala
 @app.post("/v1/audio/speech")
@@ -388,7 +379,7 @@ async def generate_speech(request: TTSRequest):
     selected_voice = voice_mapping["default"][request.voice]
     
     # Gerar o arquivo de áudio
-    audio_path = await text_to_speech(markdown_to_text(request.input), selected_voice)
+    audio_path = await text_to_speech(clear(request.input), selected_voice)
     
     # Retornar o arquivo de áudio como streaming
     with open(audio_path, "rb") as audio_file:
