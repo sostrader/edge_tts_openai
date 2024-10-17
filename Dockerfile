@@ -9,9 +9,9 @@ RUN apk add --no-cache \
     build-base 
 
 # Install Python dependencies
-COPY requirements.txt .
+COPY . .
 RUN pip3 install -r requirements.txt 
 
-COPY . .
+
 
 CMD ["python", "app.py"] 
