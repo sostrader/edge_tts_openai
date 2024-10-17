@@ -166,5 +166,5 @@ async def generate_speech(request: TTSRequest):
 # Executar o servidor se o script for executado diretamente
 if __name__ == "__main__":
     host = "0.0.0.0"
-    port = 8000
+    port = 80
     uvicorn.run(app, host=host, port=port)
