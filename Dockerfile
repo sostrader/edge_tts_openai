@@ -6,14 +6,11 @@ ENV TZ=etc/UTC
 # Install dependencies
 RUN apk add --no-cache \
     git \
-    build-base \
-    ffmpeg \
-    libmagic \
-    espeak-ng
+    build-base 
 
 # Install Python dependencies
 COPY requirements.txt .
-RUN pip install -r requirements.txt 
+RUN pip3 install -r requirements.txt 
 
 COPY . .
 
